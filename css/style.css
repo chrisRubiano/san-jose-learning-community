@@ -1,0 +1,1511 @@
+:root {
+  --blue: #385cad;
+  --blue-lighter: #7b8fc7;
+  --blue-lightest: #ccd4e8;
+  --red: #e43d30;
+  --red-lighter: #f28c69;
+  --red-lightest: #f8bea7;
+  --yellow: #f4b223;
+  --yellow-lighter: #facc7b;
+  --yellow-lightest: #fdecce;
+  --orange: #ee7623;
+  --green: #54a041;
+  --light-green: #a2d45e;
+  --light-blue: #42a7c6;
+  --pink: #e64783;
+  --purple: #8f4899;
+  --gray: #7b868c;
+  --brown: #95785e;
+  --black: #222;
+}
+
+/* iphone horizontal scrolling fix */
+html,
+body {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  overflow-x: hidden !important;
+}
+/* iphone horizontal scrolling fix */
+
+p {
+  margin-bottom: 0.6rem;
+}
+
+@font-face {
+  font-family: NerisRegular;
+  src: url("../fonts/Neris-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NerisBlack;
+  src: url("../fonts/Neris-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NerisSemiBold;
+  src: url("../fonts/Neris-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NerisThin;
+  src: url("../fonts/Neris-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: DemosNextPro;
+  src: url("../fonts/Demos-Next-Pro.otf");
+}
+
+@font-face {
+  font-family: DemosNextProBold;
+  src: url("../fonts/Demos-Next-Pro-Bold.otf");
+}
+
+.font-black {
+  font-family: "NerisBlack";
+}
+
+.font-neris {
+  font-family: NerisSemiBold;
+}
+
+/* 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "NerisBlack";
+} */
+
+body {
+  font-family: "DemosNextPro";
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* /////////////////////////////////////////// */
+/* HOME */
+/* /////////////////////////////////////////// */
+
+nav {
+  background-color: var(--yellow);
+  color: #fff !important;
+  font-size: 1.2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  /* color: #dde6fa; */
+  text-decoration: underline;
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 57px;
+  right: 0;
+  width: 230px;
+  z-index: 100;
+  background-color: #eeae25; /*rgba(255, 199, 78, 1); */
+  padding: 1rem;
+}
+
+.navbar-nav.font-neris {
+  height: 88vh;
+}
+
+.navbar-nav .nav-item {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.navbar-brand {
+  margin-left: 1rem;
+}
+
+.navbar-brand:hover {
+  text-decoration: underline;
+}
+
+.navbar-dark .navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: var(--yellow);
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-toggler img {
+  max-width: 100%;
+  filter: invert(80%) sepia(21%) saturate(3784%) hue-rotate(344deg) brightness(104%) contrast(91%);
+}
+
+#levelsMenu {
+  position: absolute;
+  top: 0;
+  right: 230px;
+  background-color: #eeae25; /*rgba(255, 212, 119, 0.8);*/
+  border-right: 1px solid #fff;
+}
+
+.sub-item {
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.carousel-caption {
+  top: 0;
+  left: 10%;
+  margin-right: 20%;
+  bottom: auto;
+  right: auto;
+  text-align: start;
+}
+
+.carousel-caption img {
+  max-height: 120px;
+  margin-bottom: 0.8rem;
+}
+
+.extraordinary-text {
+  font-size: 4rem !important;
+  color: var(--blue);
+}
+
+.carousel-caption h2 {
+  font-size: 2.2rem;
+}
+
+#carouselExampleCaptions .carousel-indicators {
+  max-width: 30vw;
+  right: 0;
+  left: auto;
+  bottom: 140px;
+}
+.carousel-indicators > li {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: var(--yellow);
+  border: 2px solid var(--yellow);
+  background-clip: initial;
+}
+
+#carouselExampleCaptions .carousel-indicators > li:not(.active) {
+  background-color: transparent;
+  opacity: 1;
+}
+
+.contact-btn a {
+  position: absolute;
+  left: 100px;
+  bottom: 160px;
+  z-index: 100;
+  background-color: var(--yellow);
+  color: #fff;
+  padding: 10px 50px;
+  font-size: 1.4rem;
+}
+/* /////////////////////////////////////////// */
+/* HOME */
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* PROGRAMAS */
+/* /////////////////////////////////////////// */
+
+section#header-program {
+  padding: 3rem;
+}
+
+section#header-program h1 {
+  color: var(--blue);
+  font-size: 1.6rem;
+}
+
+section#header-program h1:last-child {
+  margin-top: 2rem;
+}
+
+section#accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 140px;
+}
+
+.button-container h2 {
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: start;
+  width: 100%;
+}
+
+.button-container.foss {
+  background-color: var(--blue);
+}
+
+.button-container.writing {
+  background-color: var(--red);
+}
+
+.button-container.english {
+  background-color: var(--yellow);
+}
+
+.button-container.real-life {
+  background-color: var(--blue);
+}
+
+.button-container button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 12px;
+}
+
+.button-container img {
+  transition: all 200s ease;
+}
+
+.upside-down {
+  transform: scaleY(-1);
+}
+
+.button-container.foss img {
+  filter: invert(33%) sepia(98%) saturate(350%) hue-rotate(179deg) brightness(93%) contrast(101%);
+}
+
+.button-container.writing img {
+  filter: invert(42%) sepia(53%) saturate(7307%) hue-rotate(345deg) brightness(94%) contrast(90%);
+}
+
+.button-container.english img {
+  filter: invert(80%) sepia(21%) saturate(3784%) hue-rotate(344deg) brightness(104%) contrast(91%);
+}
+
+.button-container.real-life img {
+  filter: invert(33%) sepia(98%) saturate(350%) hue-rotate(179deg) brightness(93%) contrast(101%);
+}
+
+#accordion .content {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  padding: 3rem;
+}
+
+#accordion .content.foss {
+  box-shadow: inset 2000px 0 0 0 rgba(56, 92, 173, 0.75);
+  background: url("../img/programas/foss.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#accordion .content.writing {
+  box-shadow: inset 2000px 0 0 0 rgba(228, 61, 48, 0.75);
+  background: url("../img/programas/writing.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+#accordion .content.english {
+  box-shadow: inset 2000px 0 0 0 rgba(255, 199, 78, 0.75);
+  background: url("../img/programas/english.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#accordion .content.real-life {
+  box-shadow: inset 2000px 0 0 0 rgba(56, 92, 173, 0.75);
+  background: url("../img/programas/foss.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#accordion .content p {
+  font-size: 1.4rem;
+  color: #fff;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* /////////////////////////////////////////// */
+/* PROGRAMAS */
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* SPACES */
+/* /////////////////////////////////////////// */
+
+.spaces-section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  margin-top: 2rem;
+}
+
+#spaces-header {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+
+  align-self: flex-start; /*Esto es para que se siga viendo arriba en resoluciones muy altas y no lo centre todo chiquito*/
+}
+
+#spaces-header h1 {
+  font-size: 1.8rem;
+  max-width: 90%;
+}
+
+#spaces-header h1:last-child {
+  margin-top: 2.2rem;
+  max-width: 55%;
+}
+
+#spacesCarousel {
+  width: 100%;
+}
+
+#carouselSpaces .carousel-indicators > li {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+#carouselSpaces .carousel-indicators > li:not(.active) {
+  background-color: transparent;
+  opacity: 1;
+  border: 2px solid white;
+}
+
+#spacesDesigned {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#spacesDesigned p {
+  color: var(--blue);
+  font-size: 1.4rem;
+  width: 75%;
+}
+
+.carousel-container {
+  display: inline-flex;
+  width: 100%;
+}
+
+.carousel-container .carousel-object {
+  width: 33.3%;
+}
+
+.spaces-title {
+  font-weight: bold;
+}
+
+.spaces-title.campus {
+  color: var(--green);
+}
+
+.spaces-title.spark {
+  color: var(--yellow);
+}
+
+.spaces-title.shine {
+  color: var(--red);
+}
+
+.spaces-title.thrive {
+  color: var(--blue);
+}
+
+.spaces-title.prizes {
+  font-weight: bold;
+  color: var(--blue);
+  width: 75%;
+}
+
+#spacesDesigned ul {
+  width: 75%;
+
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0.2em;
+  text-indent: -1.6em;
+}
+
+.star {
+  font-weight: bold;
+  color: var(--yellow);
+}
+
+/* vvvvvvvv este elemento no existe, si lo ocupo creo otra clase porque el nombre .shadow ya lo usa bootstrap */
+/* #carouselLeft .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: inset 2000px 0 0 0 rgba(228, 61, 48, 0.4)!important;
+} */
+
+#carouselLeft .carousel-indicators > li,
+#carouselRight .carousel-indicators > li {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+#carouselLeft .carousel-indicators > li:not(.active),
+#carouselRight .carousel-indicators > li:not(.active) {
+  background-color: transparent;
+}
+
+#spacesOffer {
+  padding: 3rem;
+}
+
+#spacesOffer h2 {
+  color: var(--blue);
+  font-size: 2.4rem;
+}
+/* /////////////////////////////////////////// */
+/* SPACES */
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* COMMUNITY */
+/* /////////////////////////////////////////// */
+.community-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  background: url("../img/comunidad.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  box-shadow: inset 2000px 0 0 0 rgba(56, 92, 173, 0.75);
+}
+
+.community-header h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.community-header img {
+  margin: auto;
+  margin-top: 4rem;
+}
+
+#slickCarousel {
+  margin: 4rem 25%;
+  overflow-x: hidden;
+}
+
+.slick-dots {
+  bottom: -50%;
+  position: static;
+  display: flex;
+  justify-content: center;
+}
+
+.community-slick > .slick-dots li{
+  width: 20px;
+  height: 20px;
+  /* margin-left: 1.4rem!important; */
+  margin-left: 0!important;
+  margin-top: 3px;
+  top: 20%;
+}
+
+.slick-dots li {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 12px!important;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  margin: auto;
+}
+
+.slick-dots li.slick-active {
+  background-color: var(--blue);
+}
+
+.slick-dots li button::before {
+display: none;
+}
+
+/* /////////////////////////////////////////// */
+/* COMMUNITY */
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* REAL LIFE */
+/* /////////////////////////////////////////// */
+.real-life-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  background: url("../img/real-life.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 3.4rem;
+  box-shadow: inset 2000px 0 0 0 rgba(56, 92, 173, 0.75);
+  justify-content: center;
+  align-items: center;
+}
+
+.real-life-header h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+/* /////////////////////////////////////////// */
+/* REAL LIFE */
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* MODEL */
+/* /////////////////////////////////////////// */
+
+#model-header,
+#model-second-text {
+  padding: 2rem;
+}
+
+#model-header h1,
+#model-second-text h2 {
+  font-size: 2.6rem;
+  color: var(--blue);
+  text-align: center;
+}
+
+#model-features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#model-features img {
+  max-width: 50%;
+}
+
+#model-carousel-container {
+  width: 65%;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+/* #carouselModels .carousel-caption {
+  top: auto;
+  bottom: 15%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+}
+
+#carouselModels .carousel-caption h2 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  padding: 0.4rem;
+  color: #fff;
+  text-shadow: 4px 4px 4px  rgba(0, 0, 0, 1);
+}
+
+#carouselModels .carousel-indicators > li {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+#carouselModels .carousel-indicators > li:not(.active) {
+  background-color: transparent;
+} */
+
+/* /////////////////////////////////////////// */
+/* MODEL */
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* CONTACTO */
+/* /////////////////////////////////////////// */
+#contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+#contact-content h1 {
+  color: var(--blue);
+  font-size: 3.4rem;
+  margin-bottom: 2rem;
+}
+
+#contact-content form {
+  max-width: 50%;
+}
+
+#contact-content form input {
+  color: var(--blue);
+}
+
+.form-control {
+  border-color: var(--blue);
+  border-radius: 0;
+  border-width: 2px;
+  margin: 0.5rem;
+}
+
+#contact-content form button {
+  margin-left: 0.5rem;
+  background-color: var(--blue-lightest);
+  border: none;
+  border-radius: 0;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: var(--blue);
+}
+/* /////////////////////////////////////////// */
+/* CONTACTO */
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* NIVELES EDUCATIVOS - SPARK */
+/* /////////////////////////////////////////// */
+
+#spark-header,
+#spark-content,
+#spark-images,
+#spark-last {
+  color: #fff;
+  background-color: var(--yellow);
+}
+
+.levels-header .logo-container h4:last-of-type {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.levels-header h4 {
+  font-family: NerisSemiBold;
+}
+
+.levels-header,
+.levels-content {
+  padding: 1.5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 1.4rem;
+  display: flex;
+}
+
+.levels-content .image-container img {
+  max-height: 350px;
+}
+
+.levels-header .logo-container img {
+  max-width: 180px;
+}
+
+.levels-content {
+  padding-top: 0;
+}
+
+.levels-header {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.levels-header .logo-container h4 {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin-bottom: 0;
+}
+
+.levels-header h1 {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  margin-left: 4rem;
+}
+
+.levels-content .text-container {
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.levels-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.levels-gallery {
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: var(--red);
+}
+
+.levels-gallery .gallery-item {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.levels-gallery .gallery-item img {
+  max-width: 100%;
+}
+
+#spark-gallery {
+  background-color: var(--yellow);
+}
+
+#spark-gallery .gallery-item:nth-of-type(2) {
+  background-color: var(--yellow-lighter);
+}
+
+#spark-gallery .gallery-item:nth-of-type(3) {
+  background-color: var(--yellow-lightest);
+  color: var(--yellow);
+}
+
+.gallery-item h2 {
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.levels-last {
+  padding: 4rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.levels-last a {
+  width: 60px;
+  height: 60px;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  border: none;
+}
+
+.levels-last a img.next {
+  transform: rotate(270deg);
+}
+
+.levels-last a img.prev {
+  transform: rotate(90deg);
+}
+
+.levels-last img.logo {
+  width: 240px;
+  height: auto;
+  opacity: 50%;
+}
+
+.levels-last div {
+  width: 240px;
+}
+
+#spark-last a img {
+  filter: invert(80%) sepia(21%) saturate(3784%) hue-rotate(344deg) brightness(104%) contrast(91%);
+}
+
+/* /////////////////////////////////////////// */
+/* NIVELES EDUCATIVOS - SPARK */
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* NIVELES EDUCATIVOS - SHINE */
+/* /////////////////////////////////////////// */
+#shine-header,
+#shine-content,
+#shine-images,
+#shine-last {
+  color: #fff;
+  background-color: var(--red);
+}
+
+#shine-gallery .gallery-item:nth-of-type(1) {
+  background-color: var(--red-lightest);
+}
+
+#shine-gallery .gallery-item:nth-of-type(4) {
+  background-color: var(--red-lighter);
+  color: #fff;
+}
+
+#shine-last a img {
+  filter: invert(42%) sepia(53%) saturate(7307%) hue-rotate(345deg) brightness(94%) contrast(90%);
+}
+
+/* /////////////////////////////////////////// */
+/* NIVELES EDUCATIVOS - SHINE */
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* NIVELES EDUCATIVOS - THRIVE */
+/* /////////////////////////////////////////// */
+#thrive-header,
+#thrive-content,
+#thrive-images,
+#thrive-gallery,
+#thrive-last {
+  color: #fff;
+  background-color: var(--blue);
+}
+
+#thrive-gallery .gallery-item:nth-of-type(1) {
+  background-color: var(--blue-lighter);
+  color: #fff;
+  padding: 2rem;
+}
+
+#thrive-list {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background-color: var(--blue);
+}
+
+#thrive-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#thrive-list ul li {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+#thrive-last a img {
+  filter: invert(33%) sepia(98%) saturate(350%) hue-rotate(179deg) brightness(93%) contrast(101%);
+}
+
+/* /////////////////////////////////////////// */
+/* NIVELES EDUCATIVOS - THRIVE */
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* NIVELES EDUCATIVOS */
+/* /////////////////////////////////////////// */
+#main-levels-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+#main-levels-header img {
+  max-width: 45%;
+}
+
+#main-levels-header h1 {
+  font-size: 2rem;
+  color: var(--blue);
+  margin-top: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+
+#main-levels-gallery {
+  display: flex;
+}
+
+#main-levels-gallery a {
+  padding: 2rem;
+  width: 33.33%;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.gallery-item {
+  margin-left: 2rem;
+}
+
+#main-levels-gallery a:hover {
+  text-decoration: none;
+}
+
+#main-levels-gallery .gallery-item h4 {
+  color: white;
+  font-weight: bold;
+  text-shadow:
+   -1px -1px 0 #888,  
+    1px -1px 0 #888,
+    -1px 1px 0 #888,
+     1px 1px 0 #888;
+}
+
+#main-levels-gallery a:nth-child(1) {
+  background: url("../img//niveles-educativos/spark.png");
+}
+
+#main-levels-gallery a:nth-child(2) {
+  background: url("../img//niveles-educativos/shine.png");
+}
+
+#main-levels-gallery a:nth-child(3) {
+  background: url("../img//niveles-educativos/thrive.png");
+}
+
+/* /////////////////////////////////////////// */
+/* NIVELES EDUCATIVOS */
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* FOOTER */
+/* /////////////////////////////////////////// */
+#footer {
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4rem 1rem;
+}
+
+.footer-contact-btn {
+  background-color: var(--blue-lightest);
+  padding: 16px 32px;
+}
+
+.footer-contact-btn a {
+  color: var(--blue);
+}
+
+.footer-item p {
+  margin: 0;
+}
+
+.footer-item.name p:first-of-type {
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  font-family: "NerisBlack";
+}
+
+.back-to-top-btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--blue-lightest);
+  padding: 12px;
+}
+
+.back-to-top-btn img {
+  margin-top: -8px;
+  transform: scaleY(-1);
+  filter: invert(33%) sepia(98%) saturate(350%) hue-rotate(179deg) brightness(93%) contrast(101%);
+}
+/* /////////////////////////////////////////// */
+/* FOOTER */
+/* /////////////////////////////////////////// */
+
+/* /////////////////////////////////////////// */
+/* Elementary */
+/* /////////////////////////////////////////// */
+
+.subtitulo {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+section#elementary-header {
+  padding: 1rem 3rem;
+  color: var(--blue);
+}
+
+section#elementary-header h4 {
+  margin: 0;
+}
+
+section#elementary-header h4:first-of-type {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+
+#elementary-header p {
+  margin-top: 1rem;
+}
+
+section#squares {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square-item {
+  padding: 1.4rem;
+  max-width: 50%;
+  min-width: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.square-item:nth-of-type(1) {
+  background-color: var(--blue);
+}
+.square-item:nth-of-type(2) {
+  background-color: var(--red);
+}
+.square-item:nth-of-type(3) {
+  background-color: var(--green);
+}
+.square-item:nth-of-type(4) {
+  background-color: var(--yellow);
+}
+
+.square-item h5 {
+  text-decoration: underline;
+}
+
+.square-item img {
+  max-width: 100%;
+}
+
+section#formacion {
+  color: var(--blue);
+  padding: 0.5rem 3rem;
+}
+
+section#english {
+  color: var(--blue);
+  padding: 0.5rem 3rem;
+}
+
+section#desarrollo {
+  color: var(--blue);
+  padding: 0.5rem 3rem;
+}
+
+section#espacios {
+  color: var(--blue);
+  padding: 0.5rem 3rem;
+}
+
+/* /////////////////////////////////////////// */
+/* Elementary */
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* TEDI */
+/* /////////////////////////////////////////// */
+section#plan {
+  color: var(--blue);
+  padding: 0.5rem 3rem;
+}
+
+/* /////////////////////////////////////////// */
+/* TEDI */
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* Kinder */
+/* /////////////////////////////////////////// */
+section#autentico {
+  color: var(--blue);
+  padding: 0.5rem 3rem;
+}
+
+section#sobreKinder {
+  color: var(--blue);
+  padding: 0.5rem 3rem;
+}
+
+section#desarrolloKinder {
+  color: var(--blue);
+  padding: 0.5rem 3rem;
+}
+
+section#espaciosKinder {
+  color: var(--blue);
+  padding: 0.5rem 3rem;
+}
+/* /////////////////////////////////////////// */
+/* Kinder */
+/* /////////////////////////////////////////// */
+
+/* 
+                               /$$ /$$                                                         /$$                    
+                              | $$|__/                                                        |__/                    
+ /$$$$$$/$$$$   /$$$$$$   /$$$$$$$ /$$  /$$$$$$         /$$$$$$  /$$   /$$  /$$$$$$   /$$$$$$  /$$  /$$$$$$   /$$$$$$$
+| $$_  $$_  $$ /$$__  $$ /$$__  $$| $$ |____  $$       /$$__  $$| $$  | $$ /$$__  $$ /$$__  $$| $$ /$$__  $$ /$$_____/
+| $$ \ $$ \ $$| $$$$$$$$| $$  | $$| $$  /$$$$$$$      | $$  \ $$| $$  | $$| $$$$$$$$| $$  \__/| $$| $$$$$$$$|  $$$$$$ 
+| $$ | $$ | $$| $$_____/| $$  | $$| $$ /$$__  $$      | $$  | $$| $$  | $$| $$_____/| $$      | $$| $$_____/ \____  $$
+| $$ | $$ | $$|  $$$$$$$|  $$$$$$$| $$|  $$$$$$$      |  $$$$$$$|  $$$$$$/|  $$$$$$$| $$      | $$|  $$$$$$$ /$$$$$$$/
+|__/ |__/ |__/ \_______/ \_______/|__/ \_______/       \____  $$ \______/  \_______/|__/      |__/ \_______/|_______/ 
+                                                            | $$                                                      
+                                                            | $$                                                      
+                                                            |__/                                                       
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 1200px) {
+  .navbar-brand {
+    padding-left: 0;
+    font-size: 1.2rem;
+  }
+
+  .navbar-collapse {
+    width: 40vw;
+  }
+
+  .navbar-collapse > .navbar-collapse {
+    width: 100%;
+  }
+
+  #levelsMenu {
+    right: 40vw;
+  }
+
+  .navbar-nav .nav-item {
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+
+  /* /////////////////////////////////////////// */
+  /* COMUNIDAD */
+  /* /////////////////////////////////////////// */
+  .community-header h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  /* /////////////////////////////////////////// */
+  /* COMUNIDAD */
+  /* /////////////////////////////////////////// */
+  /* /////////////////////////////////////////// */
+  /* Real life */
+  /* /////////////////////////////////////////// */
+  .real-life-header h1 {
+    font-size: 3rem;
+  }
+  /* /////////////////////////////////////////// */
+  /* Real life */
+  /* /////////////////////////////////////////// */
+  /* /////////////////////////////////////////// */
+  /* Niveles Educativos */
+  /* /////////////////////////////////////////// */
+
+  #main-levels-header {
+    padding: 1rem;
+  }
+
+  #main-levels-header img {
+    max-width: 100%;
+  }
+
+  #main-levels-header h1 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #main-levels-gallery {
+    flex-direction: column;
+  }
+
+  #main-levels-gallery .gallery-item {
+    width: 100%;
+  }
+
+  #main-levels-gallery .gallery-item.spark,
+  #main-levels-gallery .gallery-item.shine,
+  #main-levels-gallery .gallery-item.thrive {
+    background-position: center;
+  }
+
+  /* /////////////////////////////////////////// */
+  /* Niveles Educativos */
+  /* /////////////////////////////////////////// */
+  /* /////////////////////////////////////////// */
+  /* Spark-Shine-Thrive */
+  /* /////////////////////////////////////////// */
+  .levels-header,
+  .levels-content {
+    padding: 2rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .levels-content .text-container {
+    padding: 0;
+  }
+
+  .levels-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .levels-content p {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  .levels-content img {
+    max-width: 100%;
+  }
+
+  .levels-gallery {
+    padding: 0;
+  }
+
+  .levels-gallery .gallery-item {
+    width: 50%;
+  }
+
+  .gallery-item h2 {
+    font-size: 1.8rem;
+    margin: 1.4rem 0.8rem;
+  }
+
+  /* Paddings de los elementos con ícono adentro */
+  #shine-gallery .gallery-item:nth-of-type(1),
+  #spark-gallery .gallery-item:nth-of-type(2) {
+    padding: 2rem;
+  }
+
+  .levels-last {
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .levels-last img.logo {
+    width: 200px;
+    height: auto;
+  }
+
+  .levels-last div {
+    display: none;
+  }
+
+  /* /////////////////////////////////////////// */
+  /* Spark-Shine-Thrive */
+  /* /////////////////////////////////////////// */
+  /* /////////////////////////////////////////// */
+  /* Contacto */
+  /* /////////////////////////////////////////// */
+  section#contact-content {
+    padding: 0;
+  }
+
+  #contact-content form {
+    max-width: 94%;
+    margin-left: -6%;
+  }
+  /* /////////////////////////////////////////// */
+  /* Contacto */
+  /* /////////////////////////////////////////// */
+  /* /////////////////////////////////////////// */
+  /* Programas */
+  /* /////////////////////////////////////////// */
+  section#header-program {
+    padding: 1rem;
+  }
+
+  section#header-program h1 {
+    font-size: 1.2rem;
+  }
+
+  .button-container {
+    padding: 0 10px;
+  }
+
+  .button-container h2 {
+    font-size: 1.8rem;
+  }
+
+  #accordion .content p {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  /* /////////////////////////////////////////// */
+  /* Programas */
+  /* /////////////////////////////////////////// */
+  /* /////////////////////////////////////////// */
+  /* Modelo */
+  /* /////////////////////////////////////////// */
+  #model-header,
+  #model-second-text {
+    padding: 1rem;
+  }
+
+  #model-header h1,
+  #model-second-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .feature-container {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .feature-container img {
+    max-width: 100%;
+  }
+
+  .feature-container p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  #model-carousel-container {
+    width: 90%;
+  }
+
+  /* #carouselModels h2 {
+    font-size: 1.8rem;
+    max-width: 80% !important;
+  } */
+  /* /////////////////////////////////////////// */
+  /* Modelo */
+  /* /////////////////////////////////////////// */
+  /* /////////////////////////////////////////// */
+  /* Espacios */
+  /* /////////////////////////////////////////// */
+  #spaces-header {
+    padding: 1rem;
+  }
+
+  #spaces-header h1 {
+    font-size: 1.8rem;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #spaces-header h1:last-child {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  #spacesDesigned {
+    padding: 1rem;
+  }
+
+  #spacesDesigned p {
+    font-size: 1.2rem;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel-container {
+    flex-direction: column;
+  }
+
+  .carousel-container .carousel {
+    width: 100%;
+  }
+
+  #spacesOffer {
+    padding: 1rem;
+  }
+
+  #spacesOffer h2 {
+    font-size: 1.4rem;
+  }
+  /* /////////////////////////////////////////// */
+  /* Espacios */
+  /* /////////////////////////////////////////// */
+  /* /////////////////////////////////////////// */
+  /* Home */
+  /* /////////////////////////////////////////// */
+  #carouselExampleCaptions {
+    display: none;
+  }
+
+  #carouselMobile .carousel-caption h2 {
+    padding-top: 3rem;
+    font-size: 1.4rem;
+  }
+
+  .extraordinary-text {
+    font-size: 2rem !important;
+  }
+
+  .contact-btn a {
+    left: 40px;
+    bottom: 40px;
+  }
+
+  #carouselMobile .carousel-indicators {
+    bottom: 140px;
+    left: auto;
+    right: 0;
+  }
+
+  /* /////////////////////////////////////////// */
+  /* Home */
+  /* /////////////////////////////////////////// */
+  /* /////////////////////////////////////////// */
+  /* FOOTER */
+  /* /////////////////////////////////////////// */
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-item {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  /* /////////////////////////////////////////// */
+  /* FOOTER */
+  /* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* Elementary */
+/* /////////////////////////////////////////// */
+.square-item {
+  min-width: 100%;
+  max-width: 100%;
+}
+/* /////////////////////////////////////////// */
+/* Elementary */
+/* /////////////////////////////////////////// */
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #carouselMobile {
+    display: none;
+  }
+}
