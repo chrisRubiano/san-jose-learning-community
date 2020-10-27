@@ -1402,11 +1402,11 @@ section#espaciosKinder {
   /* Espacios */
   /* /////////////////////////////////////////// */
   #spaces-header {
-    padding: 1rem;
+    padding: 0.8rem;
   }
 
   #spaces-header h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     max-width: 100%;
     text-align: center;
   }
@@ -1422,7 +1422,7 @@ section#espaciosKinder {
 
   #spacesDesigned p {
     font-size: 1.2rem;
-    width: 80%;
+    width: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -1442,6 +1442,19 @@ section#espaciosKinder {
 
   #spacesOffer h2 {
     font-size: 1.4rem;
+  }
+
+  .carousel-container .carousel-object {
+    width: 100%;
+  }
+
+  .spaces-title {
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+
+  .spaces-title.spark {
+    margin-top: 0;
   }
   /* /////////////////////////////////////////// */
   /* Espacios */
